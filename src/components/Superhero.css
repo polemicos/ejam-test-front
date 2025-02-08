@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04);
+    max-width: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+  
+.card.dark {
+  background-color: #374151;
+}
+
+.left-column {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.humility-score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.humility-score.dark {
+  color: #f9fafb;
+}
+
+.right-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.superhero-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.superhero-name.dark {
+  color: #f9fafb;
+}
+
+.superpower {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .left-column {
+    margin-bottom: 20px;
+  }
+}
+
+.superheroes-wrapper{
+  justify-content: center;
+}
+  
