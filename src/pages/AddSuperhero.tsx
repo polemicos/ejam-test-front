@@ -8,8 +8,11 @@ function AddSuperhero() {
     const [name, setName] = useState('');
     const [superpower, setSuperpower] = useState('');
     const [humility_score, setHumilityScore] = useState('');
+
     const addNewSuperhero = async (): Promise<void> => {
         try {
+            if(name=='' || superpower=='' || humility_score=='') return;
+            if(Number(humility_score) < 0 || Number(humility_score) > 10) return;
             const response = await fetch('https://ejam-test-production.up.railway.app/api/superheroes', {
                 method: 'POST',
                 headers: {
