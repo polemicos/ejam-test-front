@@ -11,8 +11,8 @@ function App() {
           <Header />
           <div className='content'>
             <Routes>
-              <Route path='/' element={<Superheroes />} />
-              <Route path='/add' element={<AddSuperhero />} />
+              <Route path='' element={<Superheroes />} />
+              <Route path='add' element={<AddSuperhero />} />
             </Routes>
           </div>
         </div>
