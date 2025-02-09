@@ -6,7 +6,7 @@ import Header from './components/Header.tsx';
 function App() {
   return (
     <>
-      <Router basename='/ejam-test-front'>
+      <Router basename='/ejam-test-front/'>
         <div className='App'>
           <Header />
           <div className='content'>
